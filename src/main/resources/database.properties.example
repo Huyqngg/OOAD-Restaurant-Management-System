@@ -1,0 +1,9 @@
+# Đổi db.host thành IP máy SQL Server, ví dụ 192.168.1.10
+db.host=192.168.1.10
+db.port=1433
+db.name=HTQLNhaHang
+db.user=restaurant_app
+db.password=RestaurantApp@2026
+db.encrypt=true
+db.trustServerCertificate=true
+db.loginTimeoutSeconds=8

@@ -1,0 +1,1 @@
+package vn.hust.restaurant.view;public interface Refreshable{void refresh();}

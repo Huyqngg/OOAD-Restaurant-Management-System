@@ -1,0 +1,7 @@
+/target/
+/.idea/
+*.iml
+*.log
+*.bak
+*.class
+/src/main/resources/database.local.properties

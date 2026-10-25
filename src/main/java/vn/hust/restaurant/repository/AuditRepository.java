@@ -1,0 +1,3 @@
+package vn.hust.restaurant.repository;
+import java.sql.*;import vn.hust.restaurant.config.Database;
+public class AuditRepository{public void log(Integer employee,String action,String entity,String entityId,String detail){try(Connection c=Database.getConnection();PreparedStatement p=c.prepareStatement("INSERT NhatKyHeThong(MaNhanVien,HanhDong,DoiTuong,MaDoiTuong,ChiTiet,ThoiGian) VALUES(?,?,?,?,?,SYSDATETIME())")){Jdbc.nullableInt(p,1,employee);p.setString(2,action);p.setString(3,entity);p.setString(4,entityId);p.setString(5,detail);p.executeUpdate();}catch(SQLException e){e.printStackTrace();}}}
